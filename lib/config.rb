@@ -2,7 +2,7 @@
 module DrbConfig
 
   def self.server_url
-    'druby://localhost:9000'
+    'druby://0.0.0.0:9000'
   end
 
 end

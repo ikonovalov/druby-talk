@@ -1,6 +1,6 @@
 require 'drb'
 DRb.start_service
-shared_object = DRbObject.new(nil, 'druby://0.0.0.0:9000')
+shared_object = DRbObject.new(nil, DrbConfig::server_url)
 
 def doRemoteWork(limit, r_object)
   0..limit.times do
